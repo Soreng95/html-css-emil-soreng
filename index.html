@@ -13,7 +13,72 @@
 
   <body>
     <header class="site-header">
-      <nav class="nav-desktop" aria-label="Main navigation">
+      <nav class="nav-mobile" aria-label="Mobile navigation">
+        <input class="nav-mobile__toggle" type="checkbox" id="nav-toggle" />
+
+        <div class="container nav-mobile__top">
+          <label
+            class="nav-mobile__btn"
+            for="nav-toggle"
+            aria-label="Toggle menu"
+          >
+            <span class="nav-mobile__bar"></span>
+            <span class="nav-mobile__bar"></span>
+            <span class="nav-mobile__bar"></span>
+          </label>
+
+          <a
+            class="nav-mobile__logo"
+            href="index.html"
+            aria-label="Rainy Days home"
+            >LOGO</a
+          >
+        </div>
+
+        <div class="nav-mobile__overlay">
+          <div class="nav-mobile__panel" role="dialog" aria-label="Menu">
+            <div class="nav-mobile__panel-inner">
+              <div class="nav-mobile__links">
+                <a
+                  class="nav-mobile__link nav-mobile__link--active"
+                  href="index.html"
+                  >Home</a
+                >
+                <a class="nav-mobile__link" href="products/index.html"
+                  >Shop All</a
+                >
+                <a class="nav-mobile__link" href="coming-soon/index.html"
+                  >Men</a
+                >
+                <a class="nav-mobile__link" href="coming-soon/index.html"
+                  >Women</a
+                >
+                <a class="nav-mobile__link" href="coming-soon/index.html"
+                  >New Arrivals</a
+                >
+                <a class="nav-mobile__link" href="coming-soon/index.html"
+                  >About Us</a
+                >
+                <a class="nav-mobile__link" href="coming-soon/index.html"
+                  >Contact</a
+                >
+                <a class="nav-mobile__link" href="coming-soon/index.html"
+                  >Search</a
+                >
+                <a class="nav-mobile__link" href="cart-page/index.html">Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <label
+            class="nav-mobile__backdrop"
+            for="nav-toggle"
+            aria-label="Close menu"
+          ></label>
+        </div>
+      </nav>
+
+      <nav class="nav-desktop" aria-label="Desktop navigation">
         <div class="container nav-desktop__inner">
           <div
             class="nav-desktop__group nav-desktop__group--left"
