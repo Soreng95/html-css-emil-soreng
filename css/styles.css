@@ -1,0 +1,62 @@
+:root {
+  /* Base */
+  --background: #fafafa;
+  --foreground: #000000;
+
+  /* Card */
+  --card: #fafafa;
+  --card-foreground: #000000;
+
+  /* Popover */
+  --popover: #0a3641;
+  --popover-foreground: #fafafa;
+
+  /* Primary */
+  --primary: #0a3641;
+  --primary-foreground: #fafafa;
+
+  /* Secondary */
+  --secondary: #e68600;
+  --secondary-foreground: #171717;
+
+  /* Muted */
+  --muted: #fafafa;
+  --muted-foreground: #808080;
+
+  /* Accent */
+  --accent: #e68600;
+  --accent-foreground: #000000;
+
+  /* Destructive */
+  --destructive: #8b0000; /* fra tidligere, ikke synlig i selection */
+  --destructive-foreground: #fafafa;
+
+  /* Borders & Inputs */
+  --border: #022f2e;
+  --input: #fafafa;
+  --ring: #808080;
+
+  /* Sidebar */
+  --sidebar: #fafafa;
+  --sidebar-foreground: #0a3641;
+  --sidebar-primary: #000000;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-accent: #e68600;
+  --sidebar-accent-foreground: #171717;
+  --sidebar-border: #022f2e;
+  --sidebar-ring: #000000;
+
+  /* Charts */
+  --chart-1: #1a4eda;
+  --chart-2: #1f3fad;
+  --chart-3: #1a4eda;
+  --chart-4: #1f3fad;
+  --chart-5: #1a4eda;
+
+  /* Shadows */
+  --shadow-2xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
