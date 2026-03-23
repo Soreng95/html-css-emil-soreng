@@ -76,6 +76,8 @@ body {
   color: var(--primary-foreground);
 }
 
+/* NAV */
+
 .nav-desktop {
   width: 100%;
   background: var(--primary);
@@ -350,6 +352,8 @@ body {
   }
 }
 
+/* HERO */
+
 .hero {
   min-height: 600px;
   background-image: url("../assets/images/abstract/pexels-aditya-ganpule-994938-2445656.jpg");
@@ -449,6 +453,8 @@ body {
     font-size: 0.85rem;
   }
 }
+/* 
+PRODUCT GALLERY */
 
 .product-gallery {
   background: #e5e5e5;
@@ -565,5 +571,88 @@ body {
 @media (min-width: 1024px) {
   .product-gallery__image {
     height: 420px;
+  }
+}
+
+/* COLLECTION */
+.collections {
+  background: #e5e5e5;
+  padding: 0 0 1.5rem;
+}
+
+.collections__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.collection-card {
+  position: relative;
+  display: block;
+  min-height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.collection-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.collection-card__title {
+  position: absolute;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.02;
+  letter-spacing: 0.02em;
+}
+
+.collection-card--men .collection-card__title {
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  max-width: 220px;
+}
+
+.collection-card--women .collection-card__title {
+  right: 1rem;
+  bottom: 1rem;
+  text-align: right;
+  font-size: 2rem;
+  max-width: 220px;
+}
+
+@media (min-width: 768px) {
+  .collections {
+    padding: 0 0 1.75rem;
+  }
+
+  .collections__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+  }
+
+  .collection-card {
+    min-height: 430px;
+  }
+
+  .collection-card--men .collection-card__title,
+  .collection-card--women .collection-card__title {
+    top: 1rem;
+    left: 1rem;
+    right: auto;
+    bottom: auto;
+    text-align: left;
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-transform: none;
+    max-width: none;
+    line-height: 1.2;
+    letter-spacing: 0;
   }
 }
