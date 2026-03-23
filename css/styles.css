@@ -912,3 +912,122 @@ PRODUCT GALLERY */
     height: 470px;
   }
 }
+
+/* BANNER */
+
+.prepared-banner {
+  background: #dcdcdc;
+  padding: 0 0 1rem;
+}
+
+.prepared-banner__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.prepared-banner__image {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.prepared-banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.prepared-banner__logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.prepared-banner__title {
+  margin: 0;
+  color: var(--primary-foreground);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.1;
+  max-width: 320px;
+}
+
+/* SERVICE */
+.service-highlights {
+  background: #dcdcdc;
+  padding: 0 0 1.5rem;
+}
+
+.service-highlights__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.15rem;
+}
+
+.service-card {
+  min-height: 92px;
+  background: var(--secondary);
+  color: var(--secondary-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 4px;
+}
+
+.service-card__icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.service-card__text {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .service-highlights {
+    padding: 0 0 2rem;
+  }
+
+  .service-highlights__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.15rem;
+  }
+
+  .service-card {
+    min-height: 110px;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .service-card__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-card__text {
+    font-size: 1.05rem;
+  }
+}
