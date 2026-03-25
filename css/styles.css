@@ -514,16 +514,19 @@ PRODUCT GALLERY */
 }
 
 .product-card-info__title {
+  color: #000;
   margin: 0 0 0.2rem;
   font-size: 0.9rem;
 }
 
 .product-card-info__price {
+  color: #000;
   margin: 0;
   font-size: 0.85rem;
 }
 
 .product-card-info__sizes {
+  color: #000;
   margin: 0 0 0.3rem;
   font-size: 0.7rem;
   text-align: right;
@@ -1239,5 +1242,93 @@ PRODUCT GALLERY */
 @media (min-width: 1024px) {
   .product-gallery--products .product-gallery__image {
     height: 360px;
+  }
+}
+
+/* FEATURED PRODUCT GRID */
+.product-gallery--featured .product-gallery__grid {
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.product-gallery--featured .product-gallery__image {
+  height: 360px;
+}
+
+@media (min-width: 768px) {
+  .product-gallery--featured .product-gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-gallery--featured .product-gallery__image {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-gallery--featured .product-gallery__image {
+    height: 340px;
+  }
+}
+
+/* PRODUCT BANNER */
+.product-banner {
+  background-image: url("../assets/images/abstract/pexels-marek-piwnicki-3907296-17301681.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 220px;
+  position: relative;
+}
+
+.product-banner__overlay {
+  min-height: 220px;
+  background: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem 1.5rem;
+}
+
+.product-banner__content {
+  text-align: center;
+  color: var(--primary-foreground);
+}
+
+.product-banner__logo {
+  width: 140px;
+  max-width: 60%;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.product-banner__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--primary-foreground);
+}
+
+@media (min-width: 768px) {
+  .product-banner {
+    min-height: 360px;
+  }
+
+  .product-banner__overlay {
+    min-height: 360px;
+    padding: 3rem 2rem;
+  }
+
+  .product-banner__logo {
+    width: 180px;
+    margin-bottom: 1.25rem;
+  }
+
+  .product-banner__title {
+    font-size: 2.8rem;
   }
 }
