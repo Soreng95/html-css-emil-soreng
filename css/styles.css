@@ -1357,6 +1357,7 @@ PRODUCT GALLERY */
 }
 
 .product-detail__images {
+  background-color: #fff;
   display: flex;
   gap: 1rem;
   align-items: flex-start;
