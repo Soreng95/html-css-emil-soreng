@@ -80,6 +80,10 @@ body {
   padding: 0 1rem;
 }
 
+h1 {
+  font-weight: 400;
+}
+
 .site-header {
   width: 100%;
   background: var(--primary);
